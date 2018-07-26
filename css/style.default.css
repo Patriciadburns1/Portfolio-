@@ -975,7 +975,6 @@ a.list-group-item.active > .badge,
   display: flex; 
   justify-content: center; 
   height: 90%; 
-  /* margin: auto;  */
   align-content: center; 
 }
 .positioning { 
