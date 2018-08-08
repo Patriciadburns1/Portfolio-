@@ -106,9 +106,6 @@ h4.heading:after {
   text-align: center;
   line-height: 40px;
 }
-.contact-form {
-  margin-bottom: 40px;
-}
 
 
 p.social {
@@ -984,15 +981,18 @@ a.list-group-item.active > .badge,
   justify-content: center; 
   height: 100vh; 
   width: 100vw;
-  align-items: center; 
+  align-items: flex-start;xx
+  flex-flow: row wrap;
+  padding: 0; 
 }
 
 .positioning { 
   display: flex; 
   justify-content:center; 
-  width: 30%; 
-  height: 100%; 
+  width: auto;
+  height: 75%;
   flex-flow: row wrap; 
+ 
 }
 
 .appImg {
@@ -1009,8 +1009,82 @@ a.list-group-item.active > .badge,
 
 .applicationDiv{
  display: flex;
-  justify-content: space-around; 
-  /* align-items: center;  */
+  justify-content: space-evenly; 
   height: 20%;
   width: 100%; 
+  padding: 0; 
 }
+
+@media only screen and (max-width: 321px) {
+  .applicationContainer{
+      display: flex; 
+      flex-flow: row wrap;
+      height: auto; 
+      padding: 0; 
+  }
+
+  .appImg {
+    width: 100%;
+  }
+
+  .positioning { 
+    display: flex; 
+    justify-content:center; 
+    width: 100%; 
+    height: auto; 
+    flex-flow: row wrap; 
+  }
+
+  .appImg img {
+    height: auto; 
+    width: 90%;
+  }
+ 
+  h1, .h1 {
+    font-size: 63px;
+  }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .applicationContainer{
+      display: flex; 
+      flex-flow: row wrap;
+      height: auto; 
+      padding: 0; 
+  }
+
+  .heading {
+    margin-bottom: 30px;
+}
+
+  .appImg {
+    width: 100%;
+  }
+
+  .positioning { 
+    display: flex; 
+    justify-content:center; 
+    width: 100%; 
+    height: auto; 
+    flex-flow: row wrap; 
+    
+  }
+
+  .appImg img {
+    height: auto; 
+    width: 66%;
+  }
+ 
+  h1, .h1 {
+    font-size: 63px;
+  }
+  }
+  /* @media only screen and (min-width: 1000px){
+    /* .applicationContainer {
+       margin-top: -338px; 
+    } */
+     
+
+
+  

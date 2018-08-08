@@ -175,32 +175,32 @@
         <h2 class="heading"> Applications </h2>
         <div class="content applicationContainer">
           <!-- <div class="container clearfix"> -->
-          <div class="positioning">
+          <div class="positioning"> <h5> Student Grade Table </h5>
             <div class="appImg">
-              <img alt="Student Grade Table" src="img/StudentGradeTable.png">
+              <img alt="Student Grade Table Application" src="img/StudentGradeTable.png">
             </div>
             <div class="applicationDiv">
-              <a href="http://www.codelikeagirlpatriciaburns.com/StudentGradeTable/dist/">Live</a>
-              <a href="https://github.com/Patriciadburns1/"> GitHub</a>
+              <a target="_blank" href="http://www.codelikeagirlpatriciaburns.com/StudentGradeTable/dist/">Live</a>
+              <a target="_blank" href="https://github.com/Patriciadburns1/"> GitHub</a>
             </div>
           </div>
-          <div class="positioning">
+          <div class="positioning"> <h5> Snack Seriously </h5>
             <div class="appImg">
-              <img alt="Memory Match Game" src="img/snackseriously.jpeg">
+              <img alt="Snack Serioulsy Application" src="img/snackseriously.jpeg">
             </div>
             <div class="applicationDiv">
-              <a href="http://www.snackseriously.com/">Live</a>
-              <a href="https://github.com/Patriciadburns1/snack_seriously"> GitHub</a>
+              <a target="_blank" href="http://www.snackseriously.com/">Live</a>
+              <a target="_blank" href="https://github.com/Patriciadburns1/snack_seriously"> GitHub</a>
             </div>
           </div>
-          <div class="positioning">
+          <div class="positioning"> <h5> Memory Match </h5>
             <div class="appImg">
               <img alt="Hillary Clinton Memory Match" src="img/HillaryClintonMemoryMatch.png">
             </div>
 
             <div class="applicationDiv">
-              <a href="http://www.codelikeagirlpatriciaburns.com/memory_match/">Live</a>
-              <a href="https://github.com/Patriciadburns1/memory_match"> GitHub</a>
+              <a target="_blank" href="http://www.codelikeagirlpatriciaburns.com/memory_match/">Live</a>
+              <a target="_blank" href="https://github.com/Patriciadburns1/memory_match"> GitHub</a>
             </div>
           </div>
           <!-- </div> -->
@@ -301,7 +301,9 @@
     }
 
     function showEmail() {
-      $(".email").text("patriciadburns@gmail.com");
+      var openEmail = '<a href="mailto:patriciadburns@gmail.com"> patriciadburns@gmail.com </a>'
+      $(".email").empty(openEmail); 
+      $(".email").append(openEmail); 
     }
 
     (function (b, o, i, l, e, r) {
