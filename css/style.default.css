@@ -989,7 +989,7 @@ a.list-group-item.active > .badge,
 .positioning { 
   display: flex; 
   justify-content:center; 
-  width: auto;
+  width: 33%; 
   height: 75%;
   flex-flow: row wrap; 
  
@@ -1041,6 +1041,19 @@ display:block;
   display:block; 
 }
 
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .applicationContainer {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      height: auto; 
+      align-items: flex-start;
+      flex-flow: row wrap;
+      padding: 0;
+  }
+
+}
+
 
   
 
@@ -1089,3 +1102,4 @@ h1, .h1 {
   display: flex;
   justify-content: center
 }
+
