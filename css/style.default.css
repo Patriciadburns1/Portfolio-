@@ -1055,7 +1055,7 @@ display:block;
 }
 .modalShadow{
   width: 58%;
-  height: 12%;
+  height: 27%;
 }
 
 .heading {
@@ -1085,3 +1085,7 @@ h1, .h1 {
 }
 }
 
+.resume{
+  display: flex;
+  justify-content: center
+}
