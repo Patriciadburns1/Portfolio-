@@ -53,11 +53,12 @@
               <div class="col-md-6">
                 <h2 class="heading">About me</h2>
                 <p> I worked in the contemporary art world for number of years prior to diving into tech. I am a former dancer
-                  and gynmast and spent many years doing both thriving in the discpline and artistry of both. I received my Masters of Fine Art in Studio Art in 2013. My
-                  drive for for learning and creativity created a natural pivot for me to go into tech.
+                  and gymnast and spent many years doing both thriving in the discpline and artistry. I received
+                  my Masters of Fine Art in Studio Art in 2013. My drive for for learning and creativity created a natural
+                  pivot for me to go into tech.
                 </p>
                 <p> I love working with new technologies; learning and solving the challenges that come with coding. In my free
-                  time I enjoy going horseback riding, being active, reading and attending lectures. </p>
+                  time I enjoy going horseback riding, rock climbing, being active, reading and attending lectures. </p>
 
               </div>
               <div class="col-md-5 col-md-offset-1">
@@ -175,27 +176,53 @@
         <h2 class="heading"> Applications </h2>
         <div class="content applicationContainer">
           <!-- <div class="container clearfix"> -->
-          <div class="positioning"> <h5> Student Grade Table </h5>
-            <div class="appImg">
+          <!-- student grade table  -->
+          <div class="positioning">
+            <h5> Student Grade Table </h5>
+            <div id="student" class="appImg">
               <img alt="Student Grade Table Application" src="img/StudentGradeTable.png">
+              <div class="modalShadow hideModal">
+                  <p class="modalBody">
+                      A mobile responsive website built for searching for snacks. Snack data is dynamically displayed including pictures
+                  and nutritional facts, filtering of allergens, search bar functionality, user login and authentication. Features
+                  built using React, React Context API, Axios calls made to a MySQL database utilizing PHP.
+                  </p>
+                </div>
             </div>
             <div class="applicationDiv">
               <a target="_blank" href="http://www.codelikeagirlpatriciaburns.com/StudentGradeTable/dist/">Live</a>
               <a target="_blank" href="https://github.com/Patriciadburns1/"> GitHub</a>
             </div>
           </div>
-          <div class="positioning"> <h5> Snack Seriously </h5>
-            <div class="appImg">
+          <!-- snack seriously  -->
+          <div class="positioning">
+            <h5> Snack Seriously </h5>
+            <div id="snacking" class="appImg">
               <img alt="Snack Serioulsy Application" src="img/snackseriously.jpeg">
+              <div class="modalShadow hideModal">
+                <p class="modalBody">
+                    A mobile responsive website built for searching for snacks. Snack data is dynamically displayed including pictures
+                and nutritional facts, filtering of allergens, search bar functionality, user login and authentication. Features
+                built using React, React Context API, Axios calls made to a MySQL database utilizing PHP.
+                </p>
+              </div>
             </div>
             <div class="applicationDiv">
               <a target="_blank" href="http://www.snackseriously.com/">Live</a>
               <a target="_blank" href="https://github.com/Patriciadburns1/snack_seriously"> GitHub</a>
             </div>
+            <!-- memory match  -->
           </div>
-          <div class="positioning"> <h5> Memory Match </h5>
-            <div class="appImg">
+          <div class="positioning">
+            <h5> Memory Match </h5>
+            <div id="hillary" class="appImg"> 
               <img alt="Hillary Clinton Memory Match" src="img/HillaryClintonMemoryMatch.png">
+            <div class="modalShadow hideModal">
+                  <p class="modalBody">
+                    A memory match game built using JavaScript, OOP, JQuery, and CSS Grid to render items to the DOM. Mobile responsive, stats
+                    tracked throughout the game and reset functionality.
+                  </p>
+            </div>
             </div>
 
             <div class="applicationDiv">
@@ -215,48 +242,14 @@
                 <h2 class="heading">Contact</h2>
                 <h2 class="heading email"> Click for Email </h2>
                 <h2 class="heading mobile">Click for Mobile</h2>
+                <a  target="_blank" href="img/PatriciaBurnsResumeWD.pdf"> <h2 class="resume">  Resume </h2> </a>
+                <a  target="_blank" href="https://www.linkedin.com/in/patricia-burns-aa62b616/"> <h2 class="resume">  LinkedIn </h2> </a>
+                <a  target="_blank" href="https://github.com/Patriciadburns1"> <h2 class="resume">  GitHub </h2> </a>
               </div>
 
             </div>
 
-
       </section>
-      <!-- <div class="row">
-                  <div class="col-md-6">
-                    <form id="contact-form" method="post" action="contact.php" class="contact-form">
-                      <div class="controls">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <div class="form-group">
-                              <label for="name">Your firstname *</label>
-                              <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group">
-                              <label for="surname">Your lastname *</label>
-                              <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="surname">Your email *</label>
-                          <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="surname">Your message for us *</label>
-                          <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
-                        </div>
-                        <div class="text-center">
-                          <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-md-6">
-                    <p> Please contact me for further information. </p>
-                  </div>
-                </div> -->
       <div class="row copyright">
         <div class="col-md-6">
           <p>&copy;2017 Patricia Burns</p>
@@ -285,15 +278,16 @@
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
   <script>
 
-    $(document).ready( function(){
+    $(document).ready(function () {
       console.log("document loaded");
-      applyClickHandlers(); 
+      applyClickHandlers();
     }
-    ); 
-     
+    );
+
     function applyClickHandlers() {
       $(".mobile").on('click', showPhone);
-      $(".email").on('click', showEmail); 
+      $(".email").on('click', showEmail);
+     
     }
 
     function showPhone() {
@@ -302,8 +296,8 @@
 
     function showEmail() {
       var openEmail = '<a href="mailto:patriciadburns@gmail.com"> patriciadburns@gmail.com </a>'
-      $(".email").empty(openEmail); 
-      $(".email").append(openEmail); 
+      $(".email").empty(openEmail);
+      $(".email").append(openEmail);
     }
 
     (function (b, o, i, l, e, r) {
@@ -314,7 +308,6 @@
       r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-
 
 
   </script>
