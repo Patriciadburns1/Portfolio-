@@ -535,6 +535,7 @@ body {
 a {
   color: #777373; 
   text-decoration: none;
+  font-size: 18px; 
 }
 a:hover,
 a:focus {
@@ -1072,7 +1073,7 @@ display:block;
 }
 
 .heading {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .appImg {
@@ -1096,6 +1097,11 @@ display:block;
 h1, .h1 {
   font-size: 63px;
 }
+
+  .heading email{
+      font-size: 20px;
+  }
+
 }
 
 .resume{
