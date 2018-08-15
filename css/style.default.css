@@ -535,6 +535,7 @@ body {
 a {
   color: #777373; 
   text-decoration: none;
+  font-size: 18px; 
 }
 a:hover,
 a:focus {
@@ -1020,7 +1021,7 @@ a.list-group-item.active > .badge,
   width: 20%;
   height: 31%;
   font-family: 'Karla', sans-serif;
-  background-color: #808080b5;
+  background-color: #6e6d6db5;
   color: white;
 }
 
@@ -1067,12 +1068,12 @@ display:block;
     padding: 0; 
 }
 .modalShadow{
-  width: 58%;
-  height: 27%;
+  width: 66%;
+  height: 31%;
 }
 
 .heading {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .appImg {
@@ -1096,6 +1097,11 @@ display:block;
 h1, .h1 {
   font-size: 63px;
 }
+
+  .heading email{
+      font-size: 20px;
+  }
+
 }
 
 .resume{
