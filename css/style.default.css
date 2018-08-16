@@ -67,6 +67,7 @@ h4.heading:after {
 }
 .img-responsive {
   margin: 0 auto;
+  max-width: 325px;
 }
 .box {
   margin-bottom: 30px;
@@ -980,7 +981,7 @@ a.list-group-item.active > .badge,
 .applicationContainer{
   display: flex; 
   justify-content: center; 
-  height: 100vh; 
+  min-height: 100vh; 
   width: 100vw;
   align-items: flex-start;
   flex-flow: row wrap;
@@ -993,7 +994,6 @@ a.list-group-item.active > .badge,
   width: 33%; 
   height: 75%;
   flex-flow: row wrap; 
- 
 }
 
 .appImg {
@@ -1002,6 +1002,7 @@ a.list-group-item.active > .badge,
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; 
 }
 
 .appImg img {
@@ -1018,11 +1019,13 @@ a.list-group-item.active > .badge,
 
 .modalShadow {
   position: absolute; 
-  width: 20%;
-  height: 31%;
+  width: 65%;
+  min-height: 43%;
   font-family: 'Karla', sans-serif;
   background-color: #6e6d6db5;
   color: white;
+  text-align: center; 
+  padding: 16px; 
 }
 
 .hideModal{
@@ -1042,6 +1045,10 @@ display:block;
   display:block; 
 }
 
+.modalBody{
+  text-align: center; 
+  }
+
 @media screen and (min-width: 768px) and (max-width: 980px) {
   .applicationContainer {
       display: flex;
@@ -1053,10 +1060,28 @@ display:block;
       padding: 0;
   }
 
+  .modalBody{
+  text-align: center; 
+  }
+
 }
 
+@media screen and (max-width: 920px){
+  .positioning{
+    width: 50%; 
+    margin-top: 30px; 
+  } 
+}
 
-  
+@media screen and (max-width: 768px){
+
+  .row.technologies{
+    max-width: 430px;
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-bottom: 30px;
+  }
+}
 
 
 
@@ -1067,10 +1092,6 @@ display:block;
     height: auto; 
     padding: 0; 
 }
-.modalShadow{
-  width: 66%;
-  height: 31%;
-}
 
 .heading {
   margin-bottom: 15px;
@@ -1078,6 +1099,10 @@ display:block;
 
 .appImg {
   width: 100%;
+}
+
+.modalBody{
+  text-align: center; 
 }
 
 .positioning { 
@@ -1108,4 +1133,13 @@ h1, .h1 {
   display: flex;
   justify-content: center
 }
+
+.iconLinks{
+ max-height: 50%; 
+ display:flex; 
+ justify-content: center; 
+ justify-content: space-around; 
+}
+
+
 
