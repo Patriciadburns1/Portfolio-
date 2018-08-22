@@ -982,7 +982,7 @@ a.list-group-item.active > .badge,
   display: flex; 
   justify-content: center; 
   min-height: 100vh; 
-  width: 100vw;
+  /* width: 100vw; */
   align-items: flex-start;
   flex-flow: row wrap;
   padding: 0; 
@@ -1053,7 +1053,7 @@ display:block;
   .applicationContainer {
       display: flex;
       justify-content: center;
-      width: 100vw;
+      /* width: 100vw; */
       height: auto; 
       align-items: flex-start;
       flex-flow: row wrap;
@@ -1093,6 +1093,10 @@ display:block;
     padding: 0; 
 }
 
+h5{
+  font-size: 13px; 
+}
+
 .heading {
   margin-bottom: 15px;
 }
@@ -1108,7 +1112,7 @@ display:block;
 .positioning { 
   display: flex; 
   justify-content:center; 
-  width: 100%; 
+  max-width: 665px; 
   height: auto; 
   flex-flow: row wrap; 
   
