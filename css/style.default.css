@@ -1142,7 +1142,11 @@ h1, .h1 {
 
 .resume{
   display: flex;
-  justify-content: center
+  justify-content: center;
+}
+
+.noUnderline{
+  text-decoration: none; 
 }
 
 .iconLinks{
